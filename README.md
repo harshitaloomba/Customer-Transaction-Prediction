@@ -8,12 +8,10 @@ Binary classification of anonymized Santander transaction features with severe c
 |---|---|
 | LightGBM Baseline (10-fold CV) | 0.8947 |
 | Neural Network (10-fold CV) | 0.8410 |
-| LightGBM + CatBoost Ensemble | not logged — re-run required |
 | LightGBM Master (pseudo-labeling only) | 0.8990 |
 | **LGBM Student-Master Pipeline** | **0.9520** |
 | LightGBM + NN Blend (50/50) | 0.8929 |
 
-![Model Comparison](results/model_comparison.png)
 
 ## Technical Highlights
 
@@ -103,7 +101,6 @@ cd src/ensemble/lgbm_nn && python train.py
 
 ## Acknowledgements
 
-Techniques in this project were studied and reimplemented from public Kaggle write-ups
-and the 1st-place solution discussion for this competition.
+Techniques in this project were studied from public Kaggle write-ups and discussions.
 See the [competition discussion page](https://www.kaggle.com/competitions/santander-customer-transaction-prediction/discussion)
 for original sources and community solutions.
