@@ -76,7 +76,7 @@ pip install -r requirements.txt
 
 ### 2. Download the data
 
-See [data/README.md](data/README.md) for Kaggle CLI instructions.
+See [data/README.md](https://www.kaggle.com/competitions/santander-customer-transaction-prediction/data) for Kaggle CLI instructions.
 
 ### 3. Run a model
 
