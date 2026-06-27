@@ -1,0 +1,9 @@
+# NOTE: Some versions below are estimates — confirm with pip freeze in your environment
+lightgbm>=3.3
+catboost>=1.1
+tensorflow>=2.10
+scikit-learn>=1.1
+pandas>=1.4
+numpy>=1.23
+jupyter>=1.0
+notebook>=6.4
