@@ -20,11 +20,6 @@ Binary classification of anonymized Santander transaction features with severe c
 - **Student → Pseudo-Label → Master pipeline**: Student model trained on augmented data generates confident test predictions. Top-2700 positives and top-2000 negatives added as pseudo-labels to the master training set. OOF AUROC: 0.8947 → 0.9520.
 - **RankGauss normalization**: QuantileTransformer (output_distribution='normal') + StandardScaler applied to neural network features. Stabilises training and improves convergence.
 
-## What I'd Do Differently
-
-- Blending LGBM (0.899) with NN (0.841) hurt the overall score to 0.893 — the ensemble did not help despite the models being architecturally different.
-- Structural diversity does not guarantee ensemble gains; what matters is whether errors are uncorrelated. LGBM and NNs on the same features tend to agree on hard cases.
-- Tune pseudo-label confidence thresholds more rigorously — the 2700/2000 split was taken from the 1st-place write-up but was not re-validated on this specific augmentation setup.
 
 ## Repository Structure
 
